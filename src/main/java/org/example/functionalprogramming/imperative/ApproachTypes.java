@@ -2,15 +2,17 @@ package org.example.functionalprogramming.imperative;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ApproachTypes {
 
     public static void main(String[] args) {
-        aprrocachType();
+        imperativeAprrocachType();
+        System.out.println(declarativeAprrocachType());
     }
 
 
-    public static void aprrocachType() {
+    public static void imperativeAprrocachType() {
         List<Person> person = List.of(
                 new Person("Ismayil", "Ragimov", Gender.MALE),
                 new Person("Musa", "Aliyev", Gender.MALE),
@@ -22,11 +24,22 @@ public class ApproachTypes {
         for (Person p : person) {
             if (p.getGender() == Gender.MALE) {
                 filteredPerson.add(p);
-            } else if (p.getGender() == Gender.FEMALE) {
-                filteredPerson.add(p);
-
             }
+
         }
         System.out.println("Filtered Person List: " + filteredPerson);
+    }
+
+    public static List<Person> declarativeAprrocachType() {
+        List<Person> persons = List.of(
+                new Person("Zaur", "Sadigov", Gender.MALE),
+                new Person("Samira", "Aliyeva", Gender.FEMALE),
+                new Person("Zehra", "Musayeva", Gender.FEMALE)
+
+        );
+        return persons
+                .stream()
+                .filter(p -> Gender.MALE.equals(p.getGender()))
+                .collect(Collectors.toList());
     }
 }
