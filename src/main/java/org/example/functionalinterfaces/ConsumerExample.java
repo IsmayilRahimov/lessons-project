@@ -1,7 +1,7 @@
 package org.example.functionalinterfaces;
 
-import org.example.functionalprogramming.imperative.Gender;
-import org.example.functionalprogramming.imperative.Person;
+import org.example.functionalprogramming.imperative.consumer.Gender;
+import org.example.functionalprogramming.imperative.consumer.Person;
 
 import java.util.function.Consumer;
 

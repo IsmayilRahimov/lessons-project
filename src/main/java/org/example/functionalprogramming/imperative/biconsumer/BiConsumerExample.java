@@ -1,13 +1,15 @@
 package org.example.functionalprogramming.imperative.biconsumer;
 
-import org.example.functionalprogramming.imperative.Person;
+import org.example.functionalprogramming.imperative.consumer.Gender;
+import org.example.functionalprogramming.imperative.consumer.Person;
 
 import java.util.function.BiConsumer;
 
 public class BiConsumerExample {
 
     public static void main(String[] args) {
-
+        getPersonInfo(new Person("Musa", "Aliyev", Gender.MALE), false);
+        getPersonInfoWithBiConsumer.accept(new Person("Samir", "Rehimov", Gender.MALE), false);
     }
 
     static String getPersonInfo(Person person, Boolean isResult) {

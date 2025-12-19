@@ -1,4 +1,4 @@
-package org.example.functionalprogramming.imperative;
+package org.example.functionalprogramming.imperative.consumer;
 
 import java.util.ArrayList;
 import java.util.List;
