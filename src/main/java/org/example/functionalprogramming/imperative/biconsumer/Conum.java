@@ -22,4 +22,5 @@ public class Conum {
     static Consumer<Person> getConsumerWithF = person -> {
         System.out.println(person.getName() + " " + person.getSurname());
     };
+
 }
