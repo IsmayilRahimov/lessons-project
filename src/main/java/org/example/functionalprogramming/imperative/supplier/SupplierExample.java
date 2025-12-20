@@ -6,7 +6,7 @@ public class SupplierExample {
 
 
     public static void main(String[] args) {
-getShow.get()
+getShow.get();
     }
 
 
