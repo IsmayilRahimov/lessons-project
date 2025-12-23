@@ -11,7 +11,8 @@ import static org.example.imperative.functional.ConsumerTime.getPerson;
 public class ExperienceConsumer {
 
     public static void main(String[] args) {
-        System.out.println(getConsumerPerson.accept(new Person("Samir", "Eliyev", Gender.MALE)););
+        getConsumerPerson.accept(new Person("Samir", "Ehmedov", Gender.MALE));
+
     }
 
 
