@@ -12,6 +12,6 @@ public class ServiceMain {
         System.out.println(personService.getAllPersons.get());
         System.out.println(personService.getPersonByName.apply("Azad"));
         personService.deleteByPerson.accept("Azad");
-        System.out.println(personService.getAllPersons.get());
+        System.out.println(personService.getAllPersons.get() );
     }
 }
