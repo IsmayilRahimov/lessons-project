@@ -37,7 +37,8 @@ public class User {
                 .filter(user -> user.id > 2)
                 .collect(Collectors.toList());
         System.out.println(filtered);
-
+        Long filteredCount = list.stream().filter(user -> user.id > 1).count();
+        System.out.println(filteredCount);
 
     }
 }
