@@ -25,6 +25,11 @@ public class FilterObject {
                 .filter(user -> user.name == "Sabirov")
                 .collect(Collectors.toList());
 
+        userList.stream()
+                .filter(user -> user.id == 4)
+                .map(user -> new User("Mr " + user.name, user.id ))
+                .forEach(System.out::println);
+
         System.out.println("Filtered id: " + filteredId);
         System.out.println(filteredUserName);
 
