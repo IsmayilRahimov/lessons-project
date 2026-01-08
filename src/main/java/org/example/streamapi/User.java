@@ -40,5 +40,14 @@ public class User {
         Long filteredCount = list.stream().filter(user -> user.id > 1).count();
         System.out.println(filteredCount);
 
+
+        List<String> mappedList = list.stream()
+                .map(user -> user.id + "Map Name :" + user.name)
+                .collect(Collectors.toList());
+        System.out.println(mappedList);
+
+
+
+
     }
 }
