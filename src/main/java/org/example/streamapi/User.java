@@ -34,7 +34,7 @@ public class User {
         list.add(new User("Musa",4));
 
 //        list.stream().forEach(System.out::println);
-        list.stream().forEach(user -> user.toString());
+        list.stream().forEach(User::toString); //method reference
 
     }
 }
