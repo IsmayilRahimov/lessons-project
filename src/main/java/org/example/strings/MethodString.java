@@ -8,5 +8,8 @@ public class MethodString {
 
         String m = String.valueOf(a);
         System.out.println(m);
+
+        Integer b = Integer.valueOf(m);
+        System.out.println(b);
     }
 }
