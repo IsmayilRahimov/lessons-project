@@ -18,6 +18,11 @@ public class TypeCasting {
         int d = (int) f;
         System.out.println(d);
 
+        int l = 3;
+
+        double z = l;
+        System.out.println(z);
+
 
     }
 }
