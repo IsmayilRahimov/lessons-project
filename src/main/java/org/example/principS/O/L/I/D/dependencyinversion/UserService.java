@@ -2,13 +2,13 @@ package org.example.principS.O.L.I.D.dependencyinversion;
 
 public class UserService {
 
-    private final MySqlDatabase database;
+    private final Database database;
 
-    public UserService(MySqlDatabase database) {
+    public UserService(Database database) {
         this.database = database;
     }
 
     void saveUser(String name) {
-        System.out.println(name + " Saved");
+        database.saveUser(name);
     }
 }
