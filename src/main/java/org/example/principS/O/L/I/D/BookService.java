@@ -1,4 +1,4 @@
-package org.example.principS.O.L.I.D.singleresponsiblity;
+package org.example.principS.O.L.I.D;
 
 public class BookService {
 
