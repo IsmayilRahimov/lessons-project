@@ -18,5 +18,15 @@ public class Teach {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Teach teach = (Teach) o;
+        return Objects.equals(name, teach.name);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(name);
+    }
 }
