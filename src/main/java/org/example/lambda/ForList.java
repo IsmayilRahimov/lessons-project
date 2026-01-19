@@ -1,7 +1,10 @@
 package org.example.lambda;
 
+import org.example.streamapi.User;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class ForList {
@@ -25,7 +28,10 @@ public class ForList {
         name.stream().map(String::toUpperCase).forEach(System.out::println);
 
 
-        System.out.println(filterednames);
+        Consumer<User> method =
+                (n) -> System.out.println(n);
+
+       System.out.println(filterednames);
 
     }
 }
