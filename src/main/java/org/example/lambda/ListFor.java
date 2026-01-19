@@ -18,6 +18,9 @@ public class ListFor {
             System.out.println(s); // for methodu ile
         }
 
+        list
+                .forEach(s -> System.out.println(s));
+
         list.forEach(System.out::println); // method reference ile
 
         for (int i = 0; i < list.size(); i++) {
