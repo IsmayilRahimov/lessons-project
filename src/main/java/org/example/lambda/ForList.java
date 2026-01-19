@@ -2,6 +2,7 @@ package org.example.lambda;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 public class ForList {
 
@@ -19,6 +20,12 @@ public class ForList {
             System.out.println(n);
         }
         name.forEach(n -> System.out.println(n));
+
+        long filterednames = name.stream().filter(n -> n.startsWith("R") || n.endsWith("K")).count();
+        name.stream().map(String::toUpperCase).forEach(System.out::println);
+
+
+        System.out.println(filterednames);
 
     }
 }
