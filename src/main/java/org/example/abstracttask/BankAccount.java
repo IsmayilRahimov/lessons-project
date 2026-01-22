@@ -12,4 +12,6 @@ public interface BankAccount {
     void setBalance(double balance);
     void setClosed(boolean closed);
     void setTransfered(double transfered);
+    void setOpen(boolean open);
+    void setAccountName(String name);
 }

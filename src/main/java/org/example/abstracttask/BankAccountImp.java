@@ -1,6 +1,7 @@
 package org.example.abstracttask;
 
 public class BankAccountImp implements BankAccount {
+
     @Override
     public void withdraw(double amount) {
         System.out.println("Withdrawal");
@@ -48,5 +49,15 @@ public class BankAccountImp implements BankAccount {
     }
     @Override
     public void setTransfered(double transfered) {
+    }
+
+    @Override
+    public void setOpen(boolean open) {
+
+    }
+
+    @Override
+    public void setAccountName(String name) {
+
     }
 }
