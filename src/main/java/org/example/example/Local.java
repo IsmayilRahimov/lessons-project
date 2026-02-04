@@ -15,4 +15,5 @@ public enum Local {
     public WeekDay getWeekDay() {
         return WeekDay.valueOf(this.name());
     }
+
 }
